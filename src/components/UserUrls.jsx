@@ -71,12 +71,12 @@ const UserUrl = () => {
                 <td className="px-6 py-4 text-sm text-gray-900 truncate max-w-xs">{url.full_url}</td>
                 <td className="px-6 py-4 text-sm">
                   <a
-                    href={`${import.meta.env.VITE_FRONTEND_URL}/${url.short_url}`}
+                    href={`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline"
                   >
-                    {`${import.meta.env.VITE_FRONTEND_URL}/${url.short_url}`}
+                    {`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                   </a>
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-900">
@@ -86,7 +86,7 @@ const UserUrl = () => {
                 </td>
                 <td className="px-6 py-4 text-sm font-medium">
                   <button
-                    onClick={() => handleCopy(`${import.meta.env.VITE_FRONTEND_URL}/${url.short_url}`, url._id)}
+                    onClick={() => handleCopy(`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`, url._id)}
                     className={`inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-md shadow-sm ${
                       copiedId === url._id
                         ? 'bg-green-600 text-white hover:bg-green-700'

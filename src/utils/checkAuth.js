@@ -7,7 +7,7 @@ export const checkAuth = async() =>{
       try {
     const data = await getCurrentUser();
     const user = data.user ;
-    console.log(data.user,"user");
+    // console.log(data.user,"user");
     if (!user) {
       store.dispatch(logout());
       throw redirect({ to: "/auth" });

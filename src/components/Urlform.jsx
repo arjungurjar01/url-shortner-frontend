@@ -18,7 +18,7 @@ function Urlform() {
     try {
     e.preventDefault();
     const data = await createShortUrl(url,customSlug);
-    console.log(data);
+    // console.log(data);
     setShortUrl(data.shortUrl);
      }catch(err){
       setError(err.message)
