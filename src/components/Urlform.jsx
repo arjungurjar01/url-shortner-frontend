@@ -11,8 +11,8 @@ function Urlform() {
   const [customSlug,setCustomSlug] = useState("");
   const [copied, setCopied] = useState(false);
   const {isAuthenticated} = useSelector((state) => state.auth);
-  console.log(isAuthenticated);
-  console.log(url);
+  // console.log(isAuthenticated);
+  // console.log(url);
 
   const handleSubmit = async (e) => {
     try {

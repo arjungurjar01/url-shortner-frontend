@@ -12,7 +12,7 @@ const LoginForm = ({ state }) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const auth = useSelector((state) => state.auth);
-    console.log(auth);
+    // console.log(auth);
 
     const handleSubmit = async () => {
         setLoading(true);
